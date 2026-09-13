@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hamza Picks | Product Manager</title>
+
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.admin-page {
+  min-height: 100vh;
+  padding: 45px 0;
+}
+
+.admin-wrap {
+  max-width: 1050px;
+  margin: auto;
+  width: 92%;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.admin-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 20px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.admin-card input,
+.admin-card textarea,
+.admin-card select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: #0d1423;
+  color: #fff;
+  font: inherit;
+}
+
+.admin-card textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.admin-products {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-product {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,.1);
+  padding: 15px;
+  border-radius: 13px;
+}
+
+.admin-product small {
+  opacity: .6;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.danger {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: #fff !important;
+}
+
+.login-box {
+  max-width: 430px;
+  margin: 12vh auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media(max-width:650px) {
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-product {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="admin-page">
+
+<div class="admin-wrap">
+
+<div class="admin-top">
+
+<div>
+
+<span class="section-tag">
+Private Area
+</span>
+
+<h1>
+Hamza Picks Product Manager
+</h1>
+
+<p style="opacity:.6">
+Add, edit, delete and change products without editing code.
+</p>
+
+</div>
+
+<a href="/" class="btn secondary">
+← Website
+</a>
+
+</div>
+
+<section id="loginBox" class="admin-card login-box">
+
+<h2>
+Admin Login
+</h2>
+
+<p style="opacity:.6;margin:7px 0 16px">
+Enter your private admin password.
+</p>
+
+<form id="loginForm">
+
+<input
+id="password"
+type="password"
+placeholder="Admin password"
+required
+style="margin-bottom:12px"
+>
+
+<button class="btn primary" type="submit">
+Login
+</button>
+
+</form>
+
+<p
+id="loginError"
+style="color:#ff7777;margin-top:12px"
+></p>
+
+</section>
+
+<section id="panel" class="hidden">
+
+<div class="admin-card">
+
+<h2 id="formTitle">
+Add Product
+</h2>
+
+<form id="productForm" class="admin-grid">
+
+<input
+id="productId"
+type="hidden"
+>
+
+<input
+id="name"
+required
+placeholder="Product name"
+>
+
+<input
+id="price"
+required
+type="number"
+min="0"
+step="0.01"
+placeholder="Price in USD"
+>
+
+<select id="category">
+
+<option>Electronics</option>
+<option>Fashion</option>
+<option>Home</option>
+<option>Beauty</option>
+<option>Sports</option>
+
+</select>
+
+<input
+id="badge"
+placeholder="Badge e.g. Popular"
+>
+
+<input
+id="image"
+required
+placeholder="Image path e.g. images/product.jpg"
+>
+
+<input
+id="affiliateLink"
+required
+class="full"
+placeholder="Amazon affiliate link"
+>
+
+<textarea
+id="description"
+required
+class="full"
+placeholder="Product description"
+></textarea>
+
+<div
+class="full"
+style="display:flex;gap:10px;flex-wrap:wrap"
+>
+
+<button
+class="btn primary"
+type="submit"
+id="saveBtn"
+>
+＋ Add Product
+</button>
+
+<button
+class="btn secondary hidden"
+type="button"
+id="cancelEdit"
+>
+Cancel Edit
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<div class="admin-card">
+
+<div
+style="
+display:flex;
+justify-content:space-between;
+gap:10px;
+align-items:center;
+margin-bottom:15px
+"
+>
+
+<h2>
+Products
+</h2>
+
+<button
+id="refresh"
+class="btn secondary"
+type="button"
+>
+Refresh
+</button>
+
+</div>
+
+<div
+id="adminProducts"
+class="admin-products"
+></div>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+<script src="admin.js" defer></script>
+
+</body>
+
+</html>

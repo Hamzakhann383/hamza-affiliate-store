@@ -1,0 +1,10 @@
+{
+  "name": "hamza-picks",
+  "version": "1.0.0",
+  "description": "Hamza Picks Amazon Affiliate Store",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^10.3.0"
+  }
+}

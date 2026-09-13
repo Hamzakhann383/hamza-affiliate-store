@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hamza Picks | Best Products, Deals & Recommendations</title>
+
+  <meta name="description"
+        content="Discover useful products, popular picks, deals and recommendations across electronics, fashion, home, beauty and sports at Hamza Picks.">
+
+  <meta name="author" content="Hamza">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link rel="canonical" href="https://hamza-affiliate-store.netlify.app/">
+  <link rel="icon" href="images/logo.png" type="image/png">
+
+  <meta name="theme-color" content="#080b16">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hamza Picks | Best Products & Deals">
+  <meta property="og:description"
+        content="Discover useful products, deals and recommendations with Hamza Picks.">
+  <meta property="og:url" content="https://hamza-affiliate-store.netlify.app/">
+  <meta property="og:site_name" content="Hamza Picks">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hamza Picks | Best Products & Deals">
+  <meta name="twitter:description"
+        content="Discover useful products, deals and recommendations.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json" id="siteSchema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://hamza-affiliate-store.netlify.app/#website",
+        "url": "https://hamza-affiliate-store.netlify.app/",
+        "name": "Hamza Picks",
+        "description": "Useful products, deals and recommendations."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hamza-affiliate-store.netlify.app/#webpage",
+        "url": "https://hamza-affiliate-store.netlify.app/",
+        "name": "Hamza Picks | Best Products & Deals",
+        "description": "Discover useful products, deals and recommendations."
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<div id="loader" class="loader">
+  <div class="loader-ring"></div>
+  <span>Loading Hamza Picks...</span>
+</div>
+
+<div class="lightning lightning-a"></div>
+<div class="lightning lightning-b"></div>
+
+<header class="navbar">
+  <div class="container nav-inner">
+
+    <a href="#home" class="brand" aria-label="Hamza Picks Home">
+      <img src="images/logo.png" alt="Hamza Picks Logo">
+      <span>Hamza<span>Picks</span></span>
+    </a>
+
+    <nav id="navMenu" class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="wishlistNavBtn" class="icon-btn" type="button">
+        ♡ <span id="wishlistCount">0</span>
+      </button>
+
+      <button id="themeBtn" class="icon-btn" type="button">
+        ☾
+      </button>
+
+      <button id="menuBtn" class="menu-btn" type="button">
+        ☰
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <span class="eyebrow">
+        ✦ Smart Shopping Starts Here
+      </span>
+
+      <h1>
+        Discover Great Products
+        <span>Without The Search.</span>
+      </h1>
+
+      <p class="hero-copy">
+        Explore useful products, popular picks and selected deals
+        in one simple place.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#products" class="btn primary">
+          Explore Products →
+        </a>
+
+        <a href="#deals" class="btn secondary">
+          Today's Deals
+        </a>
+      </div>
+
+      <div class="stats">
+        <div>
+          <strong id="productStat">0+</strong>
+          <small>Products</small>
+        </div>
+
+        <div>
+          <strong>5</strong>
+          <small>Categories</small>
+        </div>
+
+        <div>
+          <strong>24/7</strong>
+          <small>Online Picks</small>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+      <div class="orb"></div>
+
+      <div class="hero-card-icon">
+        ⚡
+      </div>
+
+      <span>HAMZA PICKS</span>
+
+      <h2>
+        Better picks.<br>
+        Less searching.
+      </h2>
+
+      <p>
+        Browse • Compare • Choose
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+
+    <div class="search-box">
+      <span>⌕</span>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search products..."
+        aria-label="Search products"
+      >
+
+      <button id="clearSearch" type="button">
+        Clear
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section id="categories" class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Categories</span>
+        <h2>Browse by Category</h2>
+      </div>
+    </div>
+
+    <div class="category-list">
+
+      <button class="category active" data-category="All">
+        All
+      </button>
+
+      <button class="category" data-category="Electronics">
+        Electronics
+      </button>
+
+      <button class="category" data-category="Fashion">
+        Fashion
+      </button>
+
+      <button class="category" data-category="Home">
+        Home
+      </button>
+
+      <button class="category" data-category="Beauty">
+        Beauty
+      </button>
+
+      <button class="category" data-category="Sports">
+        Sports
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="products" class="section products-section">
+
+  <div class="container">
+
+    <div class="section-head product-head">
+
+      <div>
+        <span class="section-tag">Selected Picks</span>
+        <h2>Featured Products</h2>
+        <p id="resultsText">Loading products...</p>
+      </div>
+
+      <select id="sortSelect" aria-label="Sort products">
+        <option value="default">Sort: Recommended</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="name">Name: A to Z</option>
+      </select>
+
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+
+    <div id="emptyState" class="empty-state" hidden>
+      <div>🔎</div>
+      <h3>No products found</h3>
+      <p>Try another search or category.</p>
+      <button id="resetBtn" class="btn primary" type="button">
+        Reset
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="deals" class="section">
+
+  <div class="container">
+
+    <div class="deal-box">
+
+      <div>
+        <span class="section-tag">Deals</span>
+
+        <h2>
+          Find your next useful pick.
+        </h2>
+
+        <p>
+          Check our product list for selected recommendations
+          and deal badges.
+        </p>
+      </div>
+
+      <a href="#products" class="btn primary">
+        View Products →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="wishlist" class="section wishlist-section" hidden>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div>
+        <span class="section-tag">Saved</span>
+        <h2>Your Wishlist</h2>
+      </div>
+
+      <button id="clearWishlist" class="btn secondary" type="button">
+        Clear Wishlist
+      </button>
+
+    </div>
+
+    <div id="wishlistGrid" class="product-grid"></div>
+
+  </div>
+
+</section>
+
+<section id="about" class="section">
+
+  <div class="container about-grid">
+
+    <div>
+      <span class="section-tag">
+        About Hamza Picks
+      </span>
+
+      <h2>
+        Simple recommendations,
+        less shopping stress.
+      </h2>
+    </div>
+
+    <div>
+
+      <p>
+        Hamza Picks is a recommendation website built to organize
+        useful products into easy-to-browse categories.
+      </p>
+
+      <div class="about-points">
+        <div>✓ Easy product discovery</div>
+        <div>✓ Clear categories</div>
+        <div>✓ Useful recommendations</div>
+        <div>✓ Regularly manageable product list</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="container disclosure-box">
+
+    <strong>Affiliate Disclosure</strong>
+
+    <p>
+      As an Amazon Associate, I earn from qualifying purchases.
+      Some links on this website may be affiliate links. When you
+      click an affiliate link and make an eligible purchase, I may
+      receive a commission at no additional cost to you.
+    </p>
+
+  </div>
+
+</section>
+
+<section id="contact" class="section">
+
+  <div class="container contact-grid">
+
+    <div>
+
+      <span class="section-tag">
+        Contact
+      </span>
+
+      <h2>
+        Have a question?
+      </h2>
+
+      <p>
+        Send a message and we will get back to you.
+      </p>
+
+      <div class="contact-lines">
+
+        <a href="mailto:hamzu12341234@gmail.com">
+          ✉ hamzu12341234@gmail.com
+        </a>
+
+        <a
+          href="https://wa.me/923139127773"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ◉ WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+    <form
+      id="contactForm"
+      action="https://formsubmit.co/hamzu12341234@gmail.com"
+      method="POST"
+    >
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="New message from Hamza Picks"
+      >
+
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+      >
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+      >
+
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Your message"
+        required
+      ></textarea>
+
+      <button class="btn primary" type="submit">
+        Send Message →
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      <strong>Hamza Picks</strong>
+      <p>Useful products. Smarter choices.</p>
+    </div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <small>
+      © <span id="year"></span> Hamza Picks. All rights reserved.
+    </small>
+
+  </div>
+
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<div id="productModal" class="modal" hidden>
+
+  <div class="modal-backdrop" data-close-modal></div>
+
+  <div class="modal-card">
+
+    <button
+      id="closeModal"
+      class="modal-close"
+      type="button"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <div id="modalBody"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
